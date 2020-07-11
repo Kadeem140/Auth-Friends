@@ -10,7 +10,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <Route to="/login" component={Login} /> */}
       <Route to='/' component={Login} />
 
       <PrivateRoute to='/friendslist' component={Friendslist}/>

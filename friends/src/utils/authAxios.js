@@ -6,14 +6,14 @@ import axios from 'axios';
 
 
 export const authAxios =() => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('token'); 
 
-    return axios.create({
-        baseUrl:`http://localhost:5010`,
+    return axios.create({           //This is creating an instance of axios that has predefined values 
+        baseUrl:`http://localhost:5010`, //setting base URL to this URL 
         headers: {
             Authorization: token,
         },
-        username: 'Lambda School',
+        username: 'Lambda School',      //This is the correct user log in information
         password: 'i<3Lambd4'
     });
 };
